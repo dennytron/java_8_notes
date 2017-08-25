@@ -6,7 +6,6 @@ import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 public class TestReadFile {
-
 	public static void main(String args[]) {
 		String fileName = "file.txt";
 		try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
