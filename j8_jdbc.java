@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class App {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         String sql = "SELECT * FROM neighborhoods.maponics_nbrs_20 LIMIT 1;";
         String connString = "jdbc:postgresql://host:5432/database?ApplicationName=app&user=denny&password=denny";
 
@@ -18,6 +18,9 @@ public class App {
                 Object name = rs.getObject(1);
                 System.out.println("Name: " + name);
             }
+        }
+        catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
