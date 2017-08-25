@@ -8,14 +8,9 @@ import java.util.stream.Stream;
 public class TestReadFile {
 
 	public static void main(String args[]) {
-
 		String fileName = "file.txt";
-
-		//read file into stream, try-with-resources
 		try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
-
 			stream.forEach(System.out::println);
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
