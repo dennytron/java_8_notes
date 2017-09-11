@@ -4,7 +4,7 @@ void testStream() {
     l.add(2);
     l.add(3);
 
-    l2 = l.stream()
+    List<Integer> l2 = l.stream()
             .filter(p -> p % 2 != 0)
             .sorted()
             .collect(toList());
