@@ -1,4 +1,5 @@
 void testStream() {
+    List<Integer> l = Arrays.asList(1, 2, 3);
     l.add(1);
     l.add(2);
     l.add(3);
