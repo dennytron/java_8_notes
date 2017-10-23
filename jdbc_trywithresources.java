@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        String sql = "SELECT * FROM neighborhoods.maponics_nbrs_20 LIMIT 1;";
+        String sql = "SELECT * FROM tsn LIMIT 1;";
         String connString = "jdbc:postgresql://host:5432/database?ApplicationName=app&user=denny&password=denny";
 
         try (Connection connect = DriverManager.getConnection(connString);
