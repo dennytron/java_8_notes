@@ -16,3 +16,7 @@ Config() {
         ex.printStackTrace();
     }
 }
+
+String getTempDir() {
+    return appConfig.getProperty("TEMP_DIR");
+}
